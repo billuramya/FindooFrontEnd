@@ -1,0 +1,40 @@
+.text-line {
+    padding: 8px;
+  }
+  
+  .text-body {
+    padding: 8px;
+  }
+  
+  .inputtitle {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  
+  .inputdesc {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #5f6368; 
+  }
+  
+  button:hover {
+    color: #202124;
+  }
+  
+  .mat-card-title {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  

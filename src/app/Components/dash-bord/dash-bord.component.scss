@@ -1,0 +1,61 @@
+.keep-img{
+    width: 40px;
+    height: 40px;
+}
+.lab-icon{
+    padding: 10px;
+}
+.nav-bar-top{
+    width: 270px;
+    height: 50px;
+    
+    margin-left: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.692);
+    flex-wrap:wrap;
+}
+.Serach-bar{
+    margin-left: 250px;
+}
+.searchinput{
+    padding-top: 30px;
+    height: 75px;
+    width: 490px;
+    padding-bottom: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 370px;
+    border-radius: 60px;
+}
+    .mat-toolbar-row-col2 input{
+        width: 500px;
+        margin-left: 15px;
+        font-size: medium;
+        font-weight: 400;
+        background-color: #24467903;
+        outline: none;
+        border: none;
+    
+
+}
+.mat-toolbar-row-col2{
+    background-color: #24467912;
+    width: 705px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 90px;
+    padding-left: 17px;
+}
+mat-toolbar-row .mat-toolbar-row-col2:hover{
+    background-color: white;
+}
+.search{
+    border-radius: 15px;
+    height: 120px;
+    border-bottom: none;
+
+}

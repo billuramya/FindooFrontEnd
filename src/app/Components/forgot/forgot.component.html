@@ -1,0 +1,27 @@
+<form [formGroup]="forgotpassword" (ngSubmit)="onForgot()" >
+
+    <div class="main-div">
+        <mat-card class="mat-card-main">
+          
+            <div class="sign-in">
+                <div class="google-logo" style="font-size: 24px;padding: 10px; color: #4285F4; font-weight: bold;">G<span style="color: #EA4335;">o</span><span style="color: #FBBC05;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span></div>
+          
+        
+                <p class="sign-in-text">Find your email</p>
+                <p class="basic-text">Enter your phone number or recovery email
+                </p>
+            </div>
+              <div class="input-field">
+                    <mat-form-field appearance="outline">
+                    <mat-label>Email or phone</mat-label>
+                    <input matInput id="email" formControlName="Email" >
+                    </mat-form-field>
+        
+                </div>
+        
+             <button mat-raised-button class="login-button-2" style="background-color: #0d6efd; color: white;">Next</button>
+        
+        </mat-card>
+    </div>
+    </form>
+        

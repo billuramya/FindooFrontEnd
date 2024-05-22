@@ -1,0 +1,53 @@
+
+
+
+<div class="main-div">
+  <mat-card class="mat-card-main">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <div class="sign-in">
+        <div class="google-logo" style="font-size: 24px; padding: 10px; color: #4285F4; font-weight: bold;">G<span style="color: #EA4335;">o</span><span style="color: #FBBC05;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span></div>
+
+        <p class="sign-in-text">Sign in</p>
+        <p class="basic-text">to continue to Gmail</p>
+
+      </div>
+
+      <div class="input-fields">
+
+        <mat-form-field appearance="outline" class="fields">
+          <mat-label>EmailorPhone</mat-label>
+          <input matInput placeholder="EmailorPhone" formControlName="email" name="email" >
+        </mat-form-field>
+
+
+        <mat-form-field appearance="outline" class="fields">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" formControlName="password" name="password" >
+          <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+            Email is required.
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('email')?.hasError('email')">
+            Email is not valid.
+        </mat-error></mat-form-field>
+
+      </div>
+
+      <div class="forgot-email">
+        <a routerLink="/forgotemail">Forgot email?</a>
+      </div>
+
+      <div class="words">
+        <p class="ex-text">Not your computer? Use Guest mode to sign in privately. </p>
+        <p class="guest">Learn more about using Guest mode</p>
+      </div>
+
+      <div>
+        <button mat-button class="login-button-1" color="White">Create account</button>
+        <button mat-raised-button class="login-button-2"  >Submit</button>
+      </div>
+
+    </form>
+  </mat-card>
+
+</div>

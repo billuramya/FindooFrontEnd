@@ -1,0 +1,20 @@
+<div class="app-icons">
+<button mat-icon-button matTooltip="Reming me"><img src="../../assets/alert.svg"></button>
+<button mat-icon-button matTooltip="Collaborator"><img src="../../assets/person_add.svg"></button>
+<button mat-icon-button matTooltip="Background options" [matMenuTriggerFor]="paletteMenu" > <img  src="../../assets/colorpallet.svg" ></button>
+<button mat-icon-button matTooltip="Add image"><img src="../../assets/imageicon.svg"></button>
+<button mat-icon-button matTooltip="Archive" (click)="onArchive()" ><img  src="../../assets/archive.svg"></button>
+<button mat-icon-button matTooltip="More" [matMenuTriggerFor]="moreMenu"><img src="../../assets/more.svg"></button>
+<mat-menu #moreMenu="matMenu" xPosition="before">
+    <button mat-menu-item (click)="onDelete()" >Delete Notes</button>
+    <button mat-menu-item >Add label</button>
+    <button mat-menu-item >Add a drawing</button>
+    <button mat-menu-item >Make a copy</button>
+    <button mat-menu-item >Show checkboxes</button>
+</mat-menu>
+<mat-menu #paletteMenu="matMenu" xPosition="before" id="colorpallet" class="test2">
+<div *ngFor="let colors of colorArray" >
+    <button class="colorIcon" [style.background]="colors.code"  (click)="selectColor(colors)"></button>
+</div>
+</mat-menu>
+</div>

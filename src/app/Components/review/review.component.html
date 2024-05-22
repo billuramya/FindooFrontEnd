@@ -1,0 +1,53 @@
+<div class="card-container" style="display: flex; margin: 10px; padding: 20px;">
+    <mat-card class="mat-card" style="margin: 30px;">
+      <h1 style="text-align: center;color:blue;">User Details</h1>
+      <p class="desc">Give The Correct Details from user </p>
+      <form (ngSubmit)="submitForm()" #userForm="ngForm">
+        
+        <div>
+          <p class="lable-heading">UserName</p>
+        </div>
+        <mat-form-field appearance="outline" class="fields">
+          <mat-label>UserName</mat-label>
+          <input matInput placeholder="enter UserName" name="userName" [(ngModel)]="user.userName" >
+        </mat-form-field>
+        <div>
+          <p class="lable-heading">UserEmail</p>
+        </div>
+        <mat-form-field appearance="outline" class="fields">
+          <mat-label>UserEmail</mat-label>
+          <input matInput placeholder="enter UserEmail" name="userEmail" [(ngModel)]="user.userEmail" >
+        </mat-form-field>
+        <div>
+          <p class="lable-heading">UserPassword</p>
+        </div>
+        <mat-form-field appearance="outline" class="fields">
+          <mat-label>UserPassword</mat-label>
+          <input matInput placeholder="enter UserPassword" name="userPassword" [(ngModel)]="user.userPassword">
+        </mat-form-field>
+        <div>
+          <p class="lable-heading">City</p>
+        </div>
+        <mat-form-field appearance="outline" class="fields">
+          <mat-label>City</mat-label>
+          <input matInput placeholder="enter City" name="city" [(ngModel)]="user.city">
+        </mat-form-field>
+  
+        <div>
+          <button mat-raised-button type="submit" class="Submit" style="background-color: #0d6efd; color:white;">Submit</button>
+        </div>
+      </form>
+    </mat-card>
+    
+    <!-- Display user input -->
+    <mat-card class="mat-card1">
+        <h1 class="lable-heading">Display Details</h1>
+    <div *ngIf="submitted">
+      <h2>User Input:</h2>
+      <p><strong>UserName:</strong> {{ user.userName }}</p>
+      <p><strong>UserEmail:</strong> {{ user.userEmail }}</p>
+      <p><strong>UserPassword:</strong> {{ user.userPassword }}</p>
+      <p><strong>City:</strong> {{ user.city }}</p>
+    </div>
+</mat-card>
+  </div>

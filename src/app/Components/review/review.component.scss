@@ -1,0 +1,35 @@
+.card-container{
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 700px;
+    place-content: center;
+    height: 650px;
+    padding-top: 50px;
+    margin: 20px;
+}
+
+.mat-card{
+    align-items: stretch;
+    padding: 20px;
+}
+.submit{
+    color: white;
+    background-color: #0d6efd;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.lable-heading{
+    font-size: medium;
+}
+.desc{
+    font-size:medium;
+    color:rgb(19, 233, 19);
+
+}
+.mat-card1{
+    align-items: stretch;
+    padding: 20px;
+    height: 500px;
+    width: 300px;
+    margin-top: 22px;
+}
